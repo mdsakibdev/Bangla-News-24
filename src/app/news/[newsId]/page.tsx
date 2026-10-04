@@ -7,20 +7,28 @@ const NewsDetail = async ({ params }: { params: { newsId: string } }) => {
     const res = await fetch(`https://news-api-v2.vercel.app/api/article/${newsId}`)
     const data = await res.json()
     const newsData = data.data;
+    console.log(newsData)
+    if (!newsData) {
+        return (<p>Data Not Pound</p>)
+    }
+
+
     const dateObj = new Date(newsData.firstPublished);
     const formattedDate = dateObj.toLocaleDateString('bn-BD', {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
     });
-
     const formattedTime = dateObj.toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: '2-digit',
         hour12: true,
     });
 
+
+
     const displayDateString = `${formattedDate} এ ${formattedTime}`;
+
     return (
         <div>
             <main className="min-h-screen bg-white py-8 px-4 sm:px-6 lg:px-8">
@@ -34,17 +42,17 @@ const NewsDetail = async ({ params }: { params: { newsId: string } }) => {
 
                         <p className="mt-4 text-gray-600 text-base leading-relaxed">
                             স্থানীয় সরকার প্রতিমন্ত্রীর এলাকার তিনটি ইউনিয়নের নামকরণ নিয়ে তীব্র বিতর্কের মধ্যেই বগুড়ার জেলা প্রশাসক মো. তৌহিদুর রহমান বিবিসি বাংলাকে জানিয়েছেন, প্রধানমন্ত্রী নিজেই তাকে নির্দেশনা দিয়েছেন...
+                            {/* {newsData.} */}
                         </p>
                     </div>
 
-                    {/* ডেমো সাইটের হুবহু স্টাইলের ডেট ও ওয়ার্ড কাউন্ট বার */}
                     <div className="py-3 my-4 border-t border-b border-gray-200 text-gray-500 text-sm flex items-center justify-between">
                         <span>{displayDateString}</span>
-                        <span>৮৩০ শব্দ</span>
+                        <span>শব্দ {newsData.wordCount}</span>
                     </div>
 
                     {/* ফিচার ইমেজ */}
-                    <div className="relative w-full h-[320px] sm:h-[420px] my-6 bg-gray-100 rounded-lg overflow-hidden">
+                    <div className="relative w-full h-80 sm:h-105 my-6 bg-gray-100 rounded-lg overflow-hidden">
                         <Image
                             src={newsData.imageUrl}
                             alt={newsData.title}

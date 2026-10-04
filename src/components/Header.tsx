@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavLinks from "./NavLinks";
+import Link from "next/link";
 
 const Header = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
@@ -24,12 +25,17 @@ const Header = () => {
 
                 {/* Authentication Buttons (Right side) */}
                 <div className="flex items-center gap-2">
-                    <button className="btn btn-sm md:btn-md btn-outline border-gray-300 hover:bg-gray-100 hover:text-black">
+                    <Link href={"/signIn"}>
+                    <button  className="btn btn-sm md:btn-md btn-outline border-gray-300 hover:bg-gray-100 hover:text-black">
                         সাইন ইন
                     </button>
+                    </Link>
+
+                    <Link href={"/signUp"}>
                     <button className="btn btn-sm md:btn-md bg-red-700 hover:bg-red-800 text-white border-none">
                         সাইন আপ
                     </button>
+                    </Link>
                 </div>
             </div>
 
