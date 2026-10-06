@@ -68,7 +68,7 @@ const ProfilePage = () => {
                 <div className="bg-base-200 border border-base-300 rounded-2xl shadow-lg overflow-hidden">
 
                     {/* Cover */}
-                    <div className="h-32 sm:h-40 bg-gradient-to-r from-red-600 via-red-500 to-orange-500">
+                    <div className="h-32 sm:h-40 bg-linear-to-r from-red-600 via-red-500 to-orange-500">
                     </div>
 
                     {/* Profile Content */}
@@ -80,6 +80,7 @@ const ProfilePage = () => {
                                 <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full ring-4 ring-base-200 shadow-xl bg-base-100">
 
                                     <img
+                                        
                                         src={
                                             user.image ||
                                             "https://placehold.co/200x200?text=User"

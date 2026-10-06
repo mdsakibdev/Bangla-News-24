@@ -1,4 +1,5 @@
 import NewsCard from "@/components/NewsCard";
+import { notFound } from "next/navigation";
 import type { ComponentProps } from "react";
 
 interface CategoryNewsProps {
@@ -21,6 +22,10 @@ const CategoryNews = async ({ params }: CategoryNewsProps) => {
     const res = await fetch(`https://news-api-v2.vercel.app/api/category/${catygoryId}`);
     const data: ApiResponse = await res.json();
     const categoryNews = data.data || [];
+
+     if (!categoryNews) {
+            notFound()
+        }
 
     // console.log(data);
     return (

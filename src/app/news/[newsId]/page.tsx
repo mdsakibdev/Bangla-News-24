@@ -1,5 +1,7 @@
+
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 
 const NewsDetail = async ({ params }: { params: { newsId: string } }) => {
@@ -7,9 +9,10 @@ const NewsDetail = async ({ params }: { params: { newsId: string } }) => {
     const res = await fetch(`https://news-api-v2.vercel.app/api/article/${newsId}`)
     const data = await res.json()
     const newsData = data.data;
-    console.log(newsData)
+
+
     if (!newsData) {
-        return (<p>Data Not Pound</p>)
+        notFound()
     }
 
 
