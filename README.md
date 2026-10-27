@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-    <img src="https://ibb.co.com/6Rc8GwhR" alt="Live Demo" />
   <a href="https://bangla-news24-two.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Website-16A34A?style=for-the-badge" alt="Live Demo" />
   </a>
   <a href="https://github.com/mdsakibdev/Bangla-News-24">
     <img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github" alt="GitHub Repository" />
@@ -20,10 +20,10 @@
 ## 🖥️ Project Preview
 
 <p align="center">
-  <a href="https://bangla-news24-two.vercel.app/">
+  <a href="https://bangla-news24-two.vercel.app/" target="_blank">
     <img
-      src="./public/screenshots/bangla-news24-homepage.png"
-      alt="Bangla News 24 Homepage Preview"
+      src="https://i.ibb.co/7JxQBCcJ/Screenshot-53.jpg"
+      alt="Bangla News 24 Homepage Screenshot"
       width="100%"
     />
   </a>
@@ -38,6 +38,8 @@
     <strong>🌐 Explore the Live Website →</strong>
   </a>
 </p>
+
+---
 
 ---
 
