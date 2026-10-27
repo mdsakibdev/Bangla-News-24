@@ -2,18 +2,44 @@
 
 ### A Modern Bengali Digital News Portal
 
-\<p align="center">
-&#x20; A responsive digital news platform designed to make news discovery simple, accessible, and engaging.
-\</p>
+<p align="center">
+  A responsive digital news platform designed to make news discovery simple, accessible, and engaging.
+</p>
 
-\<p align="center">
-&#x20; \<a href="[https://bangla-news24-two.vercel.app/](https://bangla-news24-two.vercel.app/)">
-&#x20;   \<img src="[https://img.shields.io/badge/Live%20Demo-Visit%20Website-16A34A?style=for-the-badge](https://img.shields.io/badge/Live%20Demo-Visit%20Website-16A34A?style=for-the-badge)" alt="Live Demo" />
-&#x20; \</a>
-&#x20; \<a href="[https://github.com/mdsakibdev/Bangla-News-24](https://github.com/mdsakibdev/Bangla-News-24)">
-&#x20;   \<img src="[https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge\&logo=github)" alt="GitHub Repository" />
-&#x20; \</a>
-\</p>
+<p align="center">
+  <a href="https://bangla-news24-two.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Website-16A34A?style=for-the-badge" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/mdsakibdev/Bangla-News-24">
+    <img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github" alt="GitHub Repository" />
+  </a>
+</p>
+
+---
+
+## 🖥️ Project Preview
+
+<p align="center">
+  <a href="https://bangla-news24-two.vercel.app/">
+    <img
+      src="./public/screenshots/bangla-news24-homepage.png"
+      alt="Bangla News 24 Homepage Preview"
+      width="100%"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <em>A preview of the Bangla News 24 digital news portal.</em>
+</p>
+
+<p align="center">
+  <a href="https://bangla-news24-two.vercel.app/">
+    <strong>🌐 Explore the Live Website →</strong>
+  </a>
+</p>
+
+---
 
 ---
 
